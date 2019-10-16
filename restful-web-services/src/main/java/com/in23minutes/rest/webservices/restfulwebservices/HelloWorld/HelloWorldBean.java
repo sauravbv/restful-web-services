@@ -1,7 +1,7 @@
-package com.in23minutes.rest.webservices.restfulwebservices;
+package com.in23minutes.rest.webservices.restfulwebservices.HelloWorld;
 
 public class HelloWorldBean {
-	
+
 	private String message;
 
 	public HelloWorldBean(String message) {
@@ -12,11 +12,9 @@ public class HelloWorldBean {
 		return message;
 	}
 
-
 	@Override
 	public String toString() {
 		return "HelloWorldBean [message=" + message + "]";
 	}
-	
-	
+
 }
