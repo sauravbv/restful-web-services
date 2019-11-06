@@ -2,9 +2,16 @@ package com.in23minutes.rest.webservices.restfulwebservices.todo;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Todo {
 
-	private long id;
+	@Id
+	@GeneratedValue
+	private Long id;
 	private String username;
 	private String Description;
 	private Date targetDate;
@@ -43,11 +50,11 @@ public class Todo {
 		return true;
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
